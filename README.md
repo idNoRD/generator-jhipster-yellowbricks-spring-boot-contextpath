@@ -1,8 +1,14 @@
 # generator-jhipster-yellowbricks-server-contextpath
 
-Assume the context-path is "/jh"
+## Change target:
+- File: https://github.com/jhipster/generator-jhipster/blob/main/generators/spring-boot/templates/src/main/resources/config/application.yml.ejs
+- Generator: https://github.com/jhipster/generator-jhipster/tree/main/generators/spring-boot
+- Purpose: Configure context-path
 
-For `src/main/resources/config/application.yml`
+
+## For example
+Assume the context-path is "/jh"
+So `src/main/resources/config/application.yml` will be
 ```diff
 server:
   servlet:
