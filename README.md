@@ -1,4 +1,4 @@
-# generator-jhipster-yellowbricks-server-contextpath
+# generator-jhipster-yellowbricks-spring-boot-contextpath
 
 ## Change target:
 - File: https://github.com/jhipster/generator-jhipster/blob/main/generators/spring-boot/templates/src/main/resources/config/application.yml.ejs
