@@ -6,6 +6,11 @@ A [JHipster](https://www.jhipster.tech/) blueprint that sets `server.servlet.con
 [![Generator][github-generator-image]][github-generator-url]
 ![GitHub Maintained](https://img.shields.io/maintenance/yes/2026)
 
+## JHipster source
+
+- Generator: [`generators/spring-boot`](https://github.com/jhipster/generator-jhipster/tree/main/generators/spring-boot)
+- Template: [`application.yml.ejs`](https://github.com/jhipster/generator-jhipster/blob/main/generators/spring-boot/templates/src/main/resources/config/application.yml.ejs)
+
 ## What it does
 
 Patches `src/main/resources/config/application.yml` during generation to insert `context-path` as the first key in `server.servlet`:
