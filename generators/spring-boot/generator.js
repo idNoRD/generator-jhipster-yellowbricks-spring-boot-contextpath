@@ -88,7 +88,7 @@ export default class extends BaseApplicationGenerator {
         const contextPath = this.blueprintConfig.contextPath;
         if (!contextPath) {
           this.log.warn(
-            '[context-path blueprint] contextPath not configured — add {"generator-jhipster-yellowbricks-spring-boot-contextpath":{"contextPath":"/jh/"}} to .yo-rc.json',
+            '[yellowbricks-spring-boot-contextpath] contextPath not configured — add {"generator-jhipster-yellowbricks-spring-boot-contextpath":{"contextPath":"/jh/"}} to .yo-rc.json',
           );
           return;
         }
@@ -96,16 +96,16 @@ export default class extends BaseApplicationGenerator {
         this.editFile('src/main/resources/config/application.yml', { ignoreNonExisting: true }, content => {
           // Drift detection: verify expected surrounding structure
           if (!/^server:$/m.test(content)) {
-            this.log.warn('[context-path blueprint] application.yml: server section not found — manual intervention needed');
+            this.log.warn('[yellowbricks-spring-boot-contextpath] application.yml: server section not found — manual intervention needed');
             return content;
           }
           if (!/ {2}servlet:/.test(content)) {
-            this.log.warn('[context-path blueprint] application.yml: server.servlet section not found — manual intervention needed');
+            this.log.warn('[yellowbricks-spring-boot-contextpath] application.yml: server.servlet section not found — manual intervention needed');
             return content;
           }
           if (!/^\s+session:$/m.test(content)) {
             this.log.warn(
-              '[context-path blueprint] application.yml: server.servlet.session section not found — manual intervention needed',
+              '[yellowbricks-spring-boot-contextpath] application.yml: server.servlet.session section not found — manual intervention needed',
             );
             return content;
           }
@@ -121,10 +121,10 @@ export default class extends BaseApplicationGenerator {
 
           if (previousContextPath && previousContextPath !== contextPath) {
             this.log.info(
-              `[context-path blueprint] application.yml: context-path renamed from "${previousContextPath}" to "${contextPath}"`,
+              `[yellowbricks-spring-boot-contextpath] application.yml: context-path renamed from "${previousContextPath}" to "${contextPath}"`,
             );
           } else {
-            this.log.info(`[context-path blueprint] application.yml: context-path "${contextPath}" added successfully`);
+            this.log.info(`[yellowbricks-spring-boot-contextpath] application.yml: context-path "${contextPath}" added successfully`);
           }
 
           return updated;
