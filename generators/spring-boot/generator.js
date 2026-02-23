@@ -100,7 +100,9 @@ export default class extends BaseApplicationGenerator {
             return content;
           }
           if (!/ {2}servlet:/.test(content)) {
-            this.log.warn('[yellowbricks-spring-boot-contextpath] application.yml: server.servlet section not found — manual intervention needed');
+            this.log.warn(
+              '[yellowbricks-spring-boot-contextpath] application.yml: server.servlet section not found — manual intervention needed',
+            );
             return content;
           }
           if (!/^\s+session:$/m.test(content)) {
