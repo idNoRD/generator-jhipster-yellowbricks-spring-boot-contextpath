@@ -296,6 +296,9 @@ exports[`SubGenerator spring-boot of yellowbricks-spring-boot-contextpath JHipst
   "src/main/resources/config/application-prod.yml": {
     "stateCleared": "modified",
   },
+  "src/main/resources/config/application-secret-samples.yml": {
+    "stateCleared": "modified",
+  },
   "src/main/resources/config/application-tls.yml": {
     "stateCleared": "modified",
   },
