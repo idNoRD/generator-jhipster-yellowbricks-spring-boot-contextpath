@@ -482,8 +482,5 @@ exports[`SubGenerator spring-boot of yellowbricks-spring-boot-contextpath JHipst
   "src/test/resources/templates/mail/testEmail.html": {
     "stateCleared": "modified",
   },
-  "template-file-spring-boot": {
-    "stateCleared": "modified",
-  },
 }
 `;
